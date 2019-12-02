@@ -19,4 +19,7 @@ def countdown_timer(value):
 
 print("Lets start a timer!")
 value = input("Please enter time in seconds: ")
+startTime = round(time.time())
 countdown_timer(int(value))
+endTime = round(time.time())
+print('This process took %s seconds long.' % (endTime - startTime))
